@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Calls Page</title>
+    <link rel="stylesheet" href="calls.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+
+<div class="app">
+
+    <!-- ===== Sidebar Icons ===== -->
+    <aside class="whatsapp-sidebar">
+        <div class="top-icons">
+            <div class="icon active">
+                <a href="index.html" style="color: white;"><i class="fa-solid fa-message"></i></a>
+                <span class="badge">1</span>
+            </div>
+
+            <div class="icon"><a href="status.html" style="color: white;"><i class="fa-solid fa-circle-notch"></i></a></div>
+            <div class="icon">
+                <i class="fa-solid fa-phone" style="color: #00a884;"></i>
+                <span class="status-dot"></span>
+            </div>
+
+        </div>
+
+        <div class="bottom-icons">
+            <div class="icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="icon "><i class="fa-solid fa-user"></i></div>
+        </div>
+    </aside>
+
+    <!-- ===== Calls List ===== -->
+    <section class="calls-list">
+        <header class="calls-header">
+            <h2>Calls</h2>
+            <i class="fa-solid fa-phone-plus"></i>
+        </header>
+
+        <div class="search">
+            <input type="text" placeholder="Search name or number" />
+        </div>
+
+        <div class="section-title">Favourites</div>
+        <div class="favourite">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>Add favourite</span>
+        </div>
+
+        <div class="section-title">Recent</div>
+
+        <div class="call-item">
+            <img src="https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/b7b3/live/66207fb0-bfbf-11f0-8db2-d92fbd46f955.jpg.webp" alt="">
+            <div class="info">
+                <span class="name">Lionel Messi</span>
+                <span class="status outgoing">
+                    <i class="fa-solid fa-arrow-up"></i> Outgoing
+                </span>
+            </div>
+            <span class="time">Friday</span>
+        </div>
+
+        <div class="call-item">
+            <i class="fas fa-user"></i>
+            <div class="info">
+                <span class="name">All - OS</span>
+                <span class="status missed">
+                    <i class="fa-solid fa-phone-slash"></i> Missed
+                </span>
+            </div>
+            <span class="time">Monday</span>
+        </div>
+
+        <div class="call-item">
+            <i class="fas fa-user"></i>
+            <div class="info">
+                <span class="name">Moaz</span>
+                <span class="status outgoing">
+                    <i class="fa-solid fa-arrow-up"></i> Outgoing
+                </span>
+            </div>
+            <span class="time">13/12/2025</span>
+        </div>
+
+    </section>
+
+    <!-- ===== Main Content ===== -->
+    <main class="main">
+        <div class="actions">
+            <div class="action">
+                <i class="fa-solid fa-video"></i>
+                <span>Start call</span>
+            </div>
+            <div class="action">
+                <i class="fa-solid fa-link"></i>
+                <span>New call link</span>
+            </div>
+            <div class="action">
+                <i class="fa-solid fa-keyboard"></i>
+                <span>Call a number</span>
+            </div>
+            <div class="action">
+                <i class="fa-solid fa-calendar"></i>
+                <span>Schedule call</span>
+            </div>
+        </div>
+
+        <p class="encryption">
+            <i class="fa-solid fa-lock"></i>
+            Your personal calls are end-to-end encrypted
+        </p>
+    </main>
+
+</div>
+
+</body>
+</html>

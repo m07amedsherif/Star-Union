@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task & Grade Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Student Task & Grade Manager</h1>
+            <p class="subtitle">Track students, tasks, and grades efficiently</p>
+        </header>
+
+        <!-- Add Student Section -->
+        <section class="card">
+            <h2>➕ Add New Student</h2>
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    id="studentName" 
+                    placeholder="Enter student name"
+                    class="input-field"
+                >
+                <button onclick="addStudent()" class="btn btn-primary">Add Student</button>
+            </div>
+        </section>
+
+        <!-- Add Task Section -->
+        <section class="card">
+            <h2>✅ Add Task with Grade</h2>
+            <div class="form-group">
+                <select id="taskStudentSelect" class="input-field">
+                    <option value="">Select a student</option>
+                </select>
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Enter task description"
+                    class="input-field"
+                >
+                <input 
+                    type="number" 
+                    id="taskGradeInput" 
+                    placeholder="Grade (0-100)"
+                    min="0"
+                    max="100"
+                    class="input-field"
+                >
+                <button onclick="addTask()" class="btn btn-primary">Add Task</button>
+            </div>
+        </section>
+
+        <!-- Filter Controls -->
+        <section class="card">
+            <h2>🔍 Filter & Actions</h2>
+            <div class="button-group">
+                <button onclick="showAllStudents()" class="btn btn-secondary">Show All</button>
+                <button onclick="showPassedStudents()" class="btn btn-success">Show Passed</button>
+                <button onclick="showFailedStudents()" class="btn btn-warning">Show Failed</button>
+                <button onclick="clearAllData()" class="btn btn-danger">Clear All</button>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="card stats-section">
+            <h2>📊 Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-label">Total Students:</span>
+                    <span class="stat-value" id="totalStudents">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Passed:</span>
+                    <span class="stat-value stat-success" id="passedStudents">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Failed:</span>
+                    <span class="stat-value stat-danger" id="failedStudents">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Class Average:</span>
+                    <span class="stat-value" id="classAverage">0</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Students Display -->
+        <section class="card">
+            <h2>👥 Students List</h2>
+            <div id="studentsList" class="students-container">
+                <p class="empty-state">No students added yet. Add your first student above!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

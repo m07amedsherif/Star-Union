@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F8F7F5] min-h-screen flex flex-col">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="bg-[#FBFAF9] border-b">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-semibold tracking-wide">MINIMAL</span>
+            </div>
+
+            <nav class="hidden md:flex gap-8 text-gray-600 text-sm">
+                <a href="#" class="hover:text-black">Shop</a>
+                <a href="#" class="hover:text-black">About</a>
+                <a href="#" class="hover:text-black">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="text-center py-16 bg-[#F8F7F5]">
+        <h1 class="text-5xl font-light text-gray-800 mb-4">
+            Curated Essentials
+        </h1>
+        <p class="text-gray-500 text-lg">
+            Thoughtfully designed pieces for everyday living.
+        </p>
+    </section>
+
+
+    <!-- ================= FILTER + SEARCH ================= -->
+    <section class="bg-[#F8F7F5] py-8 border-b">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+            <!-- Category Buttons -->
+            <div id="filters" class="flex flex-wrap gap-3">
+                <button class="filter-btn bg-orange-500 text-white px-4 py-2 rounded-lg text-sm border border-zinc-300"
+                    data-category="all">All</button>
+                <button class="filter-btn bg-gray-100 px-4 py-2 rounded-lg text-sm border border-zinc-300"
+                    data-category="men's clothing">Clothing</button>
+                <button class="filter-btn bg-gray-100 px-4 py-2 rounded-lg text-sm border border-zinc-300"
+                    data-category="jewelery">Accessories</button>
+                <button class="filter-btn bg-gray-100 px-4 py-2 rounded-lg text-sm border border-zinc-300"
+                    data-category="electronics">Electronics</button>
+                <button class="filter-btn bg-gray-100 px-4 py-2 rounded-lg text-sm border border-zinc-300"
+                    data-category="women's clothing">Women</button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="relative w-full md:w-96 border border-zinc-300 rounded-lg ">
+                <input type="text" id="searchInput" placeholder="Search products..."
+                    class="w-full bg-gray-100 rounded-lg px-4 py-2 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400" />
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= PRODUCTS ================= -->
+    <main class="flex-1 max-w-7xl mx-auto px-6 py-12 w-full bg-[#F8F7F5]">
+        <div id="products" class="grid gap-10 
+             grid-cols-1 
+             sm:grid-cols-2 
+             md:grid-cols-3 
+             lg:grid-cols-4">
+        </div>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="py-4 text-center text-sm text-gray-500 w-full border-t bg-[#FBFAF9]">
+        © 2026 My Store. All rights reserved.
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

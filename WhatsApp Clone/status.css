@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #161717;
+    color: #fff;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.whatsapp-sidebar {
+  width: 70px;
+  height: 100vh;
+  background-color: #1D1F1F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.top-icons,
+.bottom-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottom-icons{
+    padding-top: 10px;
+    border-top: #a09a9a3b 3px solid;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aebac1;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon:hover {
+  background-color: #374248;
+}
+
+.icon.active {
+  color: #ffffff;
+}
+
+/* Notification badge */
+.badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #25d366;
+  color: #000;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Online / status dot */
+.status-dot {
+  position: absolute;
+  top: 0px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #25d366;
+  border-radius: 50%;
+  border: 2px solid #202c33;
+}
+
+.sidebar{
+    width: 5%;
+    background-color: #111b21;
+    border-right: 1px solid #2a3942;
+    display: flex;
+    flex-direction: column;
+}
+
+.status-icons{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+/* ===== Status Item ===== */
+
+.status-list{
+    padding-top: 25px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.36);
+    width: 23%;
+}
+
+.status-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.status-item:hover {
+    background-color: #202c33;
+}
+
+.user-span {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #00a884;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.my-status img {
+    border-color: #8696a0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 14px;
+}
+
+.time {
+    font-size: 12px;
+    color: #8696a0;
+}
+
+/* ===== Main Section ===== */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-center {
+    text-align: center;
+}
+
+.status-icon i {
+    font-size: 60px;
+    color: #3b4a54;
+    margin-bottom: 20px;
+}
+
+.status-center h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.status-center p {
+    font-size: 14px;
+    color: #8696a0;
+    max-width: 350px;
+}
+
+.encryption {
+    position: absolute;
+    bottom: 20px;
+    font-size: 13px;
+    color: #8696a0;
+}

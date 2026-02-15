@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <aside class="whatsapp-sidebar">
+        <div class="top-icons">
+            <div class="icon active">
+                <i class="fa-solid fa-message" style="color: #00a884;"></i>
+                <span class="badge">1</span>
+            </div>
+
+            <div class="icon"><a href="status.html" style="color: white;"><i class="fa-solid fa-circle-notch"></i></a></div>
+
+            <div class="icon">
+                <a href="calls.html" style="color: white;"><i class="fa-solid fa-phone"></i></a>
+                <span class="status-dot"></span>
+            </div>
+
+        </div>
+
+        <div class="bottom-icons">
+            <div class="icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="icon "><i class="fa-solid fa-user"></i></div>
+        </div>
+    </aside>
+
+
+    <section class="chat-section">
+
+        <!-- Sidebar with chat list -->
+        <section class="chats">
+            <div class="chats-header">
+
+                <h2>WhatsApp</h2>
+
+                <div class="chats-icons">
+                    <span><i class="fa-solid fa-plus"></i></span>
+                    <span><i class="fas fa-ellipsis-v" title="Menu"></i></span>
+                </div>
+            </div>
+
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search or start a new chat">
+                </div>
+            </div>
+
+            <div>
+                <div class="chat-filters">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Unread</button>
+                    <button class="filter-btn">Favourites</button>
+                    <button class="filter-btn">Groups</button>
+                </div>
+            </div>
+
+            <div class="chats-list">
+                <!-- Active chat -->
+                <div class="chat-item active">
+                    <div class="chat-avatar online">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Mohamed Sherif (You)</div>
+                            <div class="chat-time">yesterday</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other chats -->
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">FBI</div>
+                            <div class="chat-time">9:25 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Front End Committee</div>
+                            <div class="chat-time">9:25 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">All - Algo</div>
+                            <div class="chat-time">9:27 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Squal</div>
+                            <div class="chat-time">9:11 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">All - CS</div>
+                            <div class="chat-time">9:29 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">IS Department - 27</div>
+                            <div class="chat-time">8:27 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">CS, IS - Advanced Software</div>
+                            <div class="chat-time">9:24 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-header">
+                            <div class="chat-name">Analysis AI phase2</div>
+                            <div class="chat-time">8:13 PM</div>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Start anew conversation!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main chat area -->
+        <section class="main-chat">
+            <div class="chat-header-bar">
+                <div class="chat-contact-info">
+                    <div class="chat-avatar online">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <div class="chat-contact-name">Mohamed Sherif (You)</div>
+                        <div style="font-size: 13px; color: #8696a0;">online</div>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <span><i class="fas fa-video" title="Video call"></i></span>
+                    <span><i class="fas fa-phone" title="Voice call"></i></span>
+                    <span><i class="fas fa-search" title="Search"></i></span>
+                    <span><i class="fas fa-ellipsis-v" title="Menu"></i></span>
+                </div>
+            </div>
+
+            <div class="messages-container">
+                <div class="message message-received">
+                    <div class="message-sender">Mohamed Sherif</div>
+                    <div>Hello!</div>
+                    <div class="message-time">9:24 PM</div>
+                </div>
+
+                <div class="message message-sent">
+                    <div>Hi!</div>
+                    <div class="message-time">9:25 PM</div>
+                </div>
+
+                <div class="windows-info">
+                    <h3>WhatsApp for Windows</h3>
+                    <p>Send and receive messages without keeping your phone online.<br>
+                        Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</p>
+                    <p style="margin-top: 10px; color: #00a884; font-weight: 500;">End-to-end encrypted</p>
+                </div>
+            </div>
+
+            <div class="message-input-area">
+                <div class="input-icons">
+                    <i class="fa-solid fa-icons"></i>
+                    <i class="fas fa-paperclip" title="Attach"></i>
+                </div>
+                <textarea class="message-input" placeholder="Type a message" rows="1"></textarea>
+                <div class="send-button">
+                    <i class="fas fa-microphone" title="Voice message"></i>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+</body>
+
+</html>
